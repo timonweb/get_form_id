@@ -34,7 +34,7 @@ function get_form_id_form_alter(&$form, &$form_state, $form_id) {
     $links = array(
       array(
         'href' => 'ajax/get_form_id/nojs/' . $form_id,
-        'title' => $form_id,
+        'title' => t('Form ID') . ': ' . $form_id,
         'attributes' => array('class' => array('ctools-use-modal', 'ctools-modal-get-form-id-style')),
       )
     );
